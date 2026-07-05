@@ -1,7 +1,6 @@
 from flask import Flask, request
 import sqlite3
 
-api_key = 'sk-c921f440c2e245b277eca876f16fbba5'
 app = Flask(__name__)
 
 db = sqlite3.connect(':memory:', check_same_thread=False)
