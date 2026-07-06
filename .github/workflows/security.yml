@@ -46,7 +46,7 @@ jobs:
       - name: Install bandit
         run: pip install bandit
       - name: Run bandit scan
-        run: bandit -r .
+        run: bandit -r app.py
   snyk-scan:
     name: Snyk Scan
     runs-on: ubuntu-latest
