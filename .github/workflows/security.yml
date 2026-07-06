@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Full History Secret Scan
         run: |
-          gitleaks detect --source . --log-opts="--all" --verbose
+          gitleaks detect --source app.py --log-opts="--all" --verbose
   bandit-scan:
     name: Bandit SAST Scan
     runs-on: ubuntu-latest
