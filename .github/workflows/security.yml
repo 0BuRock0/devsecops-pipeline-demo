@@ -29,3 +29,13 @@ jobs:
         run: pip install bandit
       - name: Run bandit scan
         run: bandit -r .
+  snyk-scan:
+    name: Snyk Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/python@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
