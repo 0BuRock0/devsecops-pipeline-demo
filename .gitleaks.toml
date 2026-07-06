@@ -1,0 +1,7 @@
+extend = true
+
+[allowlist]
+description = "Exclude virtual environment"
+paths = [
+    '''^\.venv/'''
+]
