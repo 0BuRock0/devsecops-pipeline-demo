@@ -1,4 +1,4 @@
-# Home Lab Security Pipeline
+# DevSecOps-Pipeline-Demo
 
 A DevSecOps pipeline demo: a deliberately vulnerable app scanned by GitLeaks, Bandit, and Snyk to demonstrate how automated security scanning fits into a real CI/CD workflow.
 
